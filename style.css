@@ -1,0 +1,125 @@
+/* Minimalist, modern style for Expense Loom static site */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #2d6cdf;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a.active,
+nav a:hover {
+    color: #2d6cdf;
+    border-bottom: 2px solid #2d6cdf;
+}
+
+.container {
+    max-width: 480px;
+    margin: 8vh auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+    padding: 2.5rem 2rem 2rem 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1.2rem 0.7rem 0 0.7rem;
+    padding: 0.7rem 1.6rem;
+    background: #2d6cdf;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #1b4e9b;
+}
+
+main {
+    max-width: 600px;
+    margin: 5vh auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+    padding: 2.5rem 2rem 2rem 2rem;
+}
+
+h1,
+h2 {
+    color: #2d6cdf;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    color: #333;
+}
+
+.date {
+    color: #888;
+    font-size: 0.98rem;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    margin-bottom: 1.7rem;
+}
+
+ul {
+    margin: 0.5rem 0 0 1.2rem;
+}
+
+@media (max-width: 700px) {
+
+    .container,
+    main {
+        max-width: 98vw;
+        padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    }
+
+    header {
+        padding: 1rem 0.7rem;
+    }
+}
